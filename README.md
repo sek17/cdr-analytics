@@ -53,76 +53,7 @@ Usage
 
 #### API Reference
 
-    Authentication API: /auth
-    CDR retrieval API: /cdrs
-    CDR filtering API: /cdrs?start_date=2022-01-01&end_date=2022-01-31&call_type=inbound
-    Reporting API: /reports?type=bar&data=active_calls
-    Export API: /export?type=csv
-    Real-time monitoring API: /monitor
-    Configuration API: /config
-    User management API: /users
-    Dashboard API: /dashboard
-
-##### CDR Retrieval API
-
-The CDR retrieval API allows you to retrieve call detail records (CDRs) from the database. You can retrieve all CDRs or filter them based on various criteria such as date range, call type, call status, and call direction.
-Endpoint
-
-bash
-
-GET /cdrs
-
-Query Parameters
-
-    start_date: The start date of the date range to filter the CDRs by (e.g., 2022-01-01).
-    end_date: The end date of the date range to filter the CDRs by (e.g., 2022-01-31).
-    call_type: The type of call to filter the CDRs by (e.g., inbound or outbound).
-    call_status: The status of the call to filter the CDRs by (e.g., answered or unanswered).
-    call_direction: The direction of the call to filter the CDRs by (e.g., incoming or outgoing).
-
-Response
-
-The API returns a JSON object containing an array of CDRs that match the specified filter criteria.
-
-##### CDR Filtering API
-
-The CDR filtering API allows you to filter CDRs based on various criteria such as date range, call type, call status, and call direction. You can use this API to retrieve CDRs that match the specified filter criteria.
-Endpoint
-
-bash
-
-GET /cdrs?start_date=2022-01-01&end_date=2022-01-31&call_type=inbound
-
-Query Parameters
-
-    start_date: The start date of the date range to filter the CDRs by (e.g., 2022-01-01).
-    end_date: The end date of the date range to filter the CDRs by (e.g., 2022-01-31).
-    call_type: The type of call to filter the CDRs by (e.g., inbound or outbound).
-    call_status: The status of the call to filter the CDRs by (e.g., answered or unanswered).
-    call_direction: The direction of the call to filter the CDRs by (e.g., incoming or outgoing).
-
-Response
-
-The API returns a JSON object containing an array of CDRs that match the specified filter criteria.
-
-##### Reporting API
-
-The reporting API allows you to generate various types of reports based on the filtered CDRs. You can generate charts and graphs that visualize the call data.
-Endpoint
-
-bash
-
-GET /reports?type=bar&data=active_calls
-
-Query Parameters
-
-    type: The type of chart or graph to generate (e.g., bar or pie).
-    data: The type of data to display on the chart or graph (e.g., active_calls or answered_calls).
-
-Response
-
-The API returns a JSON object containing the data necessary to generate the specified chart or graph. The front-end can use this data to render the chart or graph.
-
+   
 #### Contributing
 
 Contributions are welcome! Please open an issue or pull request if you have any suggestions or bug reports.
