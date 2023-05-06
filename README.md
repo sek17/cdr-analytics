@@ -22,7 +22,7 @@ This is a web-based tool for analyzing Call Detail Records (CDRs) stored in a My
 #### Configuration
 
 The tool can be configured using a config.json file, which should be placed in the root directory of the repository. Here is a sample configuration file:
-
+```
 json
 
 {
@@ -44,6 +44,7 @@ json
     "expiration": 86400
   }
 }
+```
 
 Usage
 
